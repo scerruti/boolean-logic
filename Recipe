@@ -1,0 +1,96 @@
+Boolean Expressions
+
+George Boole
+Mathematician
+George Boole was an English mathematician, philosopher and logician. He worked in the fields of differential equations and algebraic logic, and is now best known as the author of The Laws of Thought. Wikipedia
+Born: November 2, 1815, Lincoln, United Kingdom
+Died: December 8, 1864, Ballintemple, Cork, Republic of Ireland
+
+Step 1.
+
+Create a method generateTable(TwoVariableFunction aTwoVariableFunction) in TruthTable that returns a truth table for two variables as a string:
+
+   A   |   B   | Result
+-------+-------+--------
+  True |  True | True
+  True | False | False
+  ...
+  
+  Don't forget to add '\n' to each line.
+  
+Step 2.
+
+Boolean syntax
+
+  A is a variable
+  A' means not A
+  + OR
+  . AND
+
+Create classes for the following two variable expressions by extending TwoVariableFunctions:
+
+  A + B
+  (A + B)'
+  A' . B'
+  A . B    (Given as an example)
+  (A . B)'
+  A' + B'
+  
+ Create JUnit tests to generate the truth tables for all of these classes.
+ 
+ Which functions generated the same tables and why?
+ 
+ Step 3.
+ 
+ Create a method in displayTable(Function aFunction) in TruthTable that outputs a truth table for N variables.
+ 
+ Step 4.
+ 
+ Implement and test some Properties of Boolean Algebra
+ 
+ Commutative Law
+	(a) A + B = B + A
+	(b) A . B = B . A
+
+ Associate Law
+	(a) (A + B) + C = A + (B + C) 
+	(b) (A . B) . C = A . (B . C)
+
+ Distributive Law
+	(a) A . (B + C) = A . B + A . C
+	(b) A + (B . C) = (A + B) . (A + C)
+
+ Annulment Law
+	(a) A . False = False
+	(b) A + True = True 
+
+ Identity Law
+	(a) A + False = A 
+	(b) A . True = A
+
+ Idempotent Law
+	(a) A + A = A 
+	(b) A . A = A
+
+ Complement Law
+	(a) A' + A = True 
+	(b) A' . A = False
+
+ Double Negative Law
+    (a) (A')' = A
+
+ De Morgan's Theorem
+	(a) (A + B)' = A' . B'  
+	(b) (A . B)' = A' + B'    
+ 
+ Absorption Laws
+	(a) A · (A + B) = A
+	(b) A + (A · B) = A
+ 
+ Simplification Laws
+	(a) A · (A' + B) = A · B
+	(b) A + (A' · B) = A + B
+	(c) A · B' + A · C + B' · C = A · B + B' · C   
+
+ Bonus: What is added in Java 8 that could improve the appearance of the sample code?
+  
