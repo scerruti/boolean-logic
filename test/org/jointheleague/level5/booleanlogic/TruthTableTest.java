@@ -12,7 +12,7 @@ public class TruthTableTest {
 	@Test
 	public void test() {
 		String expected = 
-			"   A   |   B   | Result\n" +
+			"   A   |   B   | A and B\n" +
 			"-------+-------+--------\n" +
 			"  true |  true | true\n" +
 			"  true | false | false\n" +
