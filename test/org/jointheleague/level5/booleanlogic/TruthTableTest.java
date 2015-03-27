@@ -11,13 +11,13 @@ public class TruthTableTest {
 
 	@Test
 	public void test() {
-		String expected = "\n" +
+		String expected = 
 			"   A   |   B   | Result\n" +
 			"-------+-------+--------\n" +
-			" True  | True  | True\n" +
-			" True  | False | False\n" +
-			" False | True  | False\n" +
-			" False | False | False\n";
+			"  true |  true | true\n" +
+			"  true | false | false\n" +
+			" false |  true | false\n" +
+			" false | false | false\n";
 		
 		String result = table.generateTable(new AandB());
 		System.out.println(result);
