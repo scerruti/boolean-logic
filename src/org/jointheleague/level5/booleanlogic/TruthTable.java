@@ -3,7 +3,7 @@ package org.jointheleague.level5.booleanlogic;
 public class TruthTable {
 	public String generateTable(TwoVariableFunction fn) {
 		StringBuilder response = new StringBuilder();
-		response.append("   A   |   B   | Result\n");
+		response.append(String.format("   A   |   B   | %s\n", fn.getName()));
 		response.append("-------+-------+--------\n");
 		
 		for (boolean a : new boolean[] {true, false}) {

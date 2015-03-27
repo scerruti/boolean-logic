@@ -9,4 +9,9 @@ public class NotQuantityAandB extends TwoVariableFunction {
 	public boolean execute(boolean a, boolean b) {
 		return !(a && b);
 	}
+
+	@Override
+	public String getName() {
+		return "(A and B)'";
+	}
 }

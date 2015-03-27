@@ -9,4 +9,9 @@ public class NotAorNotB extends TwoVariableFunction {
 	public boolean execute(boolean a, boolean b) {
 		return (!a || !b);
 	}
+
+	@Override
+	public String getName() {
+		return "A' or B'";
+	}
 }
